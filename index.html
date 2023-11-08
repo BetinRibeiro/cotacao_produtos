@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="https://static.pingendo.com/bootstrap/bootstrap-4.3.1.css">
+    <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/BetinRibeiro/flucodecaixa/main/logo.png">
+    <script src="main.js" defer></script>
+    </head>
+    <body>
+        <div class="py-5" id="tabela">
+            <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                <h3 class="">Cotação de Produtos</h3>
+                <p>Logicamente menor valor unitario é o mais barato</p>
+                <a class="btn btn-primary mx-1" id="adicionar">
+                    <i class="fa fa-fw fa-plus"></i>
+                    Adicionar
+                </a>
+                    <a class="btn btn-danger mx-1" id="zerar">
+                        <i class="fa fa-fw fa-plus"></i>
+                        ZerarTudo
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                <div class="table-responsive">
+                    <table class="table table-bordered "  id="tabela">
+                    <thead>
+                        <tr>
+                        <th>Total</th>
+                        <th>Quant</th>
+                        <th>Vlr Unt</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>Otto</td>
+                        </tr>
+                    </tbody>
+                    </table>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="py-5 d-none" id="formulario" >
+            <div class="container">
+                <div class="row">
+                    <div class="bg-white p-5 mx-auto col-md-8">
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-header"> Cadastro</div>
+                                <div class="card-body">
+                                    <form id="form">
+                                        <div class="form-group">
+                                            <label>Total</label>
+                                            <input type="number" class="form-control" data-index="new" required="required" id="valor">
+                                            <small class="form-text text-muted">
+                                                Valor Total do Produto</small>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Quantidade</label>
+                                            <input type="number" class="form-control" required="required" id="quantidade">
+                                            <small class="form-text text-muted">
+                                                Quantidade na Embalagem</small>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary mx-1" id="salvar">
+                                            Salvar
+                                        </button>
+                                        <button type="submit" class="btn mx-1 btn-danger" id="cancelar">
+                                            Cancelar
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
